@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Charge Coverage Ratio Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="fixedChargeCoverageRadio" name="variables" checked>
+  <label for="fixedChargeCoverageRadio">Fixed Charge Coverage</label>
+
+  <input type="radio" id="EBITRadio" name="variables">
+  <label for="EBITRadio">EBIT</label>
+
+  <input type="radio" id="leasePaymentsRadio" name="variables" disabled>
+  <label for="leasePaymentsRadio">Lease Payments</label>
+
+  <input type="radio" id="interestPaymentsRadio" name="variables">
+  <label for="interestPaymentsRadio">Interest Payments</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">EBIT</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">Lease Payments</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">Interest Payments</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
